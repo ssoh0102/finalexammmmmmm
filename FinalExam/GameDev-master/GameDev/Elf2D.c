@@ -50,7 +50,7 @@ void Elf2DDrawLine(int x1, int y1, int x2, int y2, char* Buffer, int width, int 
     while (1) {
         if (x1 >= 0 && x1 < width && y1 >= 0 && y1 < height) 
         {
-            Buffer[y1 * (width + 1) + x1] = '*';  // 화면에 점을 찍음
+            Buffer[y1 * (width + 1) + x1] = '@@';  // 화면에 점을 찍음
         }
 
         if (x1 == x2 && y1 == y2) 
@@ -70,6 +70,37 @@ void Elf2DDrawLine(int x1, int y1, int x2, int y2, char* Buffer, int width, int 
     }
 }
 
+// 두 점을 연결하는 직선을 그리는 함수 (브레젠햄 알고리즘, float 버전)
+void Elf2DDrawLine2(float x1, float y1, float x2, float y2, char* Buffer, int width, int height)
+{
+    float dx = abs(x2 - x1);
+    float dy = abs(y2 - y1);
+    float sx = (x1 < x2) ? 1.0f : -1.0f;
+    float sy = (y1 < y2) ? 1.0f : -1.0f;
+    float err = dx - dy;
+
+    while (1) {
+        if ((int)x1 >= 0 && (int)x1 < width && (int)y1 >= 0 && (int)y1 < height)
+        {
+            Buffer[(int)y1 * (width + 1) + (int)x1] = '@@';  // 화면에 점을 찍음
+        }
+
+        if ((int)x1 == (int)x2 && (int)y1 == (int)y2)
+            break;
+
+        float e2 = err * 2.0f;
+        if (e2 > -dy)
+        {
+            err -= dy;
+            x1 += sx;
+        }
+        if (e2 < dx)
+        {
+            err += dx;
+            y1 += sy;
+        }
+    }
+}
 
 void Elf2DSleep(int ms)
 {

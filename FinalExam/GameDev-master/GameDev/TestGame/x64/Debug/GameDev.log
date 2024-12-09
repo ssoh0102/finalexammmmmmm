@@ -1,0 +1,18 @@
+﻿  Elf2D.c
+  main.c
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(53,45): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(76,23): warning C4244: '함수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(77,23): warning C4244: '함수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(85,55): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(76,16): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\Elf2D.c(77,16): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(84,47): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(85,47): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(89,47): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(90,47): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(151,12): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(152,12): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(153,12): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\main.c(154,12): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  GameDev.vcxproj -> C:\Users\user\Desktop\FinalExam\GameDev-master\GameDev\x64\Debug\TestGame.exe
